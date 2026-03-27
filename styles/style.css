@@ -432,8 +432,20 @@ body {
     border-top: 2px solid #1e293b;
 }
 
-/* Responsive - Highlights Page */
+/* Responsive - Tablet (1024px and below) */
 @media (max-width: 1024px) {
+    .index-hero {
+        padding: 60px 0;
+    }
+
+    .index-title {
+        font-size: 3.5rem;
+    }
+
+    .index-description {
+        font-size: 1.2rem;
+    }
+
     .highlights-section {
         padding: 60px 0;
     }
@@ -454,200 +466,145 @@ body {
     .highlight-card:hover {
         transform: translate(-4px, -4px);
         box-shadow: 10px 10px 0px #1e293b;
-        margin-bottom: 24px;
-        position: relative;
+    }
+}
+
+/* Responsive - Mobile (768px and below) */
+@media (max-width: 768px) {
+    .index-hero {
+        padding: 40px 0;
     }
 
-    /* Sharp SVG / pure CSS shapes instead of AI ones */
-    .index-feature-icon::before {
-        content: '';
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        border: 2px solid #ffffff;
+    .index-title {
+        font-size: 2.8rem;
+        margin-bottom: 20px;
     }
 
-    .index-feature-icon-2 {
-        background: transparent;
-        border: 2px solid #1e293b;
+    .index-description {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
     }
 
-    .index-feature-icon-2::before {
-        border-radius: 50%;
-        border-color: #1e293b;
+    .index-actions {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
     }
 
-    .index-feature-icon-3::before {
-        border: none;
-        background: #ffffff;
-        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    .index-btn {
+        width: 100%;
     }
 
-    .index-feature-card h3 {
-        font-size: 1.5rem;
-        color: #1e293b;
-        margin-bottom: 12px;
-        font-weight: 800;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
+    .index-features {
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 
-    .index-feature-card p {
-        color: #475569;
-        line-height: 1.6;
+    .index-feature-card {
+        padding: 30px 24px;
+    }
+
+    .highlights-section {
+        padding: 40px 0;
+        min-height: auto;
+    }
+
+    .highlights-header {
+        margin-bottom: 60px;
+    }
+
+    .highlights-title {
+        font-size: 2.2rem;
+        margin-bottom: 16px;
+    }
+
+    .highlights-subtitle {
         font-size: 1.05rem;
     }
 
-    /* Responsive Styles */
-    @media (max-width: 1024px) {
-        .index-hero {
-            padding: 60px 0;
-        }
-
-        .index-title {
-            font-size: 3.5rem;
-        }
-
-        .index-description {
-            font-size: 1.2rem;
-        }
+    .highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 
-    @media (max-width: 768px) {
-        .highlights-section {
-            padding: 40px 0;
-            min-height: auto;
-        }
+    .highlight-card {
+        padding: 32px 24px;
+        box-shadow: 4px 4px 0px #1e293b;
+    }
 
-        .highlights-header {
-            margin-bottom: 60px;
-        }
+    .highlight-card:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 6px 6px 0px #1e293b;
+    }
 
-        .highlights-title {
-            font-size: 2.2rem;
-            margin-bottom: 16px;
-        }
+    .highlight-card h3 {
+        font-size: 1.4rem;
+    }
 
-        .highlights-subtitle {
-            font-size: 1.05rem;
-        }
+    .highlight-card p {
+        font-size: 0.95rem;
+    }
+}
 
-        .highlights-grid {
-            grid-template-columns: 1fr;
-            gap: 24px;
-        }
+/* Responsive - Small Mobile (480px and below) */
+@media (max-width: 480px) {
+    .index-title {
+        font-size: 2.2rem;
+    }
 
-        .highlight-card {
-            padding: 32px 24px;
-            box-shadow: 4px 4px 0px #1e293b;
-        }
+    .index-badge {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+        margin-bottom: 20px;
+    }
 
-        .highlight-card:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 6px 6px 0px #1e293b;
-        }
+    .index-description {
+        font-size: 1rem;
+    }
 
-        .highlight-card h3 {
-            font-size: 1.4rem;
-        }
+    .highlights-section {
+        padding: 32px 0;
+    }
 
-        .highlight-card p {
-            font-size: 0.95rem;
+    .highlights-badge {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
 
-            .index-hero {
-                padding: 40px 0;
-            }
+    .highlights-title {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
 
-            .index-title {
-                font-size: 2.8rem;
-                margin-bottom: 20px;
-            }
+    .highlights-subtitle {
+        font-size: 0.95rem;
+    }
 
-            .index-description {
-                font-size: 1.1rem;
-                margin-bottom: 30px;
-            }
+    .highlights-grid {
+        gap: 16px;
+    }
 
-            .index-actions {
-                flex-direction: column;
-                gap: 16px;
-                width: 100%;
-                max-width: 300px;
-                margin: 0 auto;
-            }
+    .highlight-card {
+        padding: 24px 20px;
+        box-shadow: 3px 3px 0px #1e293b;
+        border: 2px solid #1e293b;
+    }
 
-            .index-btn {
-                width: 100%;
-            }
+    .highlight-card:hover {
+        transform: translate(-1px, -1px);
+        box-shadow: 4px 4px 0px #1e293b;
+    }
 
-            .index-features {
-                grid-template-columns: 1fr;
-                gap: 24px;
-            }
+    .highlight-card h3 {
+        font-size: 1.1rem;
+    }
 
-            .index-feature-card {
-                padding: 30px 24px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .highlights-section {
-                padding: 32px 0;
-            }
-
-            .highlights-badge {
-                font-size: 0.75rem;
-                padding: 6px 10px;
-            }
-
-            .highlights-title {
-                font-size: 1.8rem;
-                margin-bottom: 12px;
-            }
-
-            .highlights-subtitle {
-                font-size: 0.95rem;
-            }
-
-            .highlights-grid {
-                gap: 16px;
-            }
-
-            .highlight-card {
-                padding: 24px 20px;
-                box-shadow: 3px 3px 0px #1e293b;
-                border: 2px solid #1e293b;
-            }
-
-            .highlight-card:hover {
-                transform: translate(-1px, -1px);
-                box-shadow: 4px 4px 0px #1e293b;
-            }
-
-            .highlight-card h3 {
-                font-size: 1.1rem;
-            }
-
-            .highlight-icon {
-                width: 48px;
-                height: 48px;
-                margin-bottom: 16px;
-                font-size: 1.5rem;
-            }
-        }
-
-        .index-title {
-            font-size: 2.2rem;
-        }
-
-        .index-badge {
-            font-size: 0.75rem;
-            padding: 6px 10px;
-            margin-bottom: 20px;
-        }
-
-        .index-description {
-            font-size: 1rem;
-        }
+    .highlight-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 16px;
+        font-size: 1.5rem;
     }
 }
