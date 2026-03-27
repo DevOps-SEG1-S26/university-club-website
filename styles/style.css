@@ -51,10 +51,15 @@ body {
     color: #38bdf8;
 }
 /* Event Section */
-.event {
+.events {
     background: #fff;
     padding: 30px;
     margin-top: 30px;
+}
+.event-title {
+    font-size: 28px;
+    color: #1e293b;
+    margin-bottom: 20px;
 }
 .cardA{
     background: #e0f2fe;
