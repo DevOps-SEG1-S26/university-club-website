@@ -479,6 +479,10 @@ section.highlights-section {
     margin-bottom: 24px;
 }
 
+.highlights-badge i {
+    margin-right: 8px;
+}
+
 .highlights-title {
     font-size: 3.5rem;
     color: #1e293b;
@@ -521,6 +525,15 @@ section.highlights-section {
 .highlight-icon {
     width: 64px;
     height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.highlight-icon i {
+    font-size: 2.5rem;
+    color: #1e293b;
 }
 
 
@@ -581,6 +594,11 @@ section.highlights-section {
     margin-top: 16px;
     padding-top: 16px;
     border-top: 2px solid #1e293b;
+}
+
+.highlight-achievement i {
+    margin-right: 8px;
+    color: #1e293b;
 }
 
 /* Responsive - Tablet (1024px and below) */
