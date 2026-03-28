@@ -1,0 +1,130 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background: #f4f6f9;
+}
+
+/* Container */
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+/* Header */
+.header {
+	background: #1e293b;
+	color: #fff;
+	padding: 15px 0;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.nav ul {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+	transition: 0.3s;
+}
+
+.nav ul li a:hover {
+	color: #38bdf8;
+}
+
+/* Clubs Page */
+.clubs-main {
+	padding: 40px 0;
+}
+
+.page-intro {
+	margin-bottom: 30px;
+}
+
+.page-intro h1 {
+	color: #1e293b;
+	margin-bottom: 10px;
+}
+
+.page-intro p {
+	color: #334155;
+}
+
+.category-links {
+	background: #ffffff;
+	border-radius: 8px;
+	padding: 20px;
+	margin-bottom: 25px;
+}
+
+.category-links h2 {
+	margin-bottom: 12px;
+	color: #1e293b;
+}
+
+.category-links ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.category-links a {
+	color: #0f172a;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.category-links a:hover {
+	color: #0284c7;
+}
+
+.clubs-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 20px;
+}
+
+.club-category {
+	background: #ffffff;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.club-category h3 {
+	color: #1e293b;
+	margin-bottom: 10px;
+}
+
+.club-category p {
+	color: #334155;
+	line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+	background: #1e293b;
+	color: #fff;
+	text-align: center;
+	padding: 15px 0;
+	margin-top: 50px;
+}
