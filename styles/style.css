@@ -8,6 +8,17 @@
 
 body {
     background: #f4f6f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main Content - Flexbox Growth */
+main,
+section.events,
+section.join-section,
+section.highlights-section {
+    flex: 1;
 }
 
 /* Container */
